@@ -68,50 +68,72 @@ npm init next-app test --example "https://github.com/vannoel/starter-react-spa"
 
 Here I list those packages used in this starter. And thanks to each author for your masterpieces sincerely.
 
-- rimraf
-- dotenv
-- recompose
+> rimraf
+>
+> dotenv
+>
+> recompose
 
-- webpack
-- webpack-cli
-- webpack-dev-server
-- webpack-merge
-- html-webpack-plugin
-- mini-css-extract-plugin
-- optimize-css-assets-webpack-plugin
-- terser-webpack-plugin
-- uglifyjs-webpack-plugin
+> webpack
+>
+> webpack-cli
+>
+> webpack-dev-server
+>
+> webpack-merge
+>
+> html-webpack-plugin
+>
+> mini-css-extract-plugin
+>
+> optimize-css-assets-webpack-plugin
+>
+> terser-webpack-plugin
+>
+> uglifyjs-webpack-plugin
 
-- @babel
-- babel-loader
-- babel-eslint
+> @babel
+>
+> babel-loader
+>
+> babel-eslint
 
-- css-loader
+> css-loader
 
-- postcss-loader
-- autoprefixer
+> postcss-loader
+>
+> autoprefixer
 
-- sass-loader
-- sass
-- node-sass
+> sass-loader
+>
+> sass
+>
+> node-sass
 
-- eslint-loader
-- eslint
-- eslint-plugin-react
+> eslint-loader
+>
+> eslint
+>
+> eslint-plugin-react
 
-- file-loader
+> file-loader
 
-- react
-- react-dom
-- react-redux
-- react-router-dom
+> react
+>
+> react-dom
+>
+> react-redux
+>
+> react-router-dom
 
-- redux
-- redux-persist
 
-- axios
+> redux
+>
+> redux-persist
 
-- @fortawesome
+> axios
+
+> @fortawesome
 
 ## Reference
 
