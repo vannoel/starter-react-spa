@@ -1,6 +1,5 @@
 # starter-react-spa
 A starter for single-page application of website based on React.
-git clone git@github.com:vannoel/shorten-url-frontend.git test
 
 ## Clone Starter
 
@@ -29,7 +28,7 @@ degit https://github.com/vannoel/starter-react-spa
 This package aims to clone a starter as a beginning of project. So it will detect the package.json file before cloning. And it will auto-install after clone the starter.
 
 ```
-npm init next-app test --example "https://github.com/vannoel/starter-react-spa"
+npm init next-app [new project] --example "https://github.com/vannoel/starter-react-spa"
 ```
 
 ## File System
