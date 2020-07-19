@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body, 
+div, 
+p, 
+ul {
+  margin: 0;
+  padding: 0;
+}
