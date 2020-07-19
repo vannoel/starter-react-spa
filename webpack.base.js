@@ -18,7 +18,7 @@ module.exports = {
   output: {
     publicPath: "/",
     path: path.join(__dirname, "/dist"),
-    filename: "[name].js"
+    filename: "[name].[hash].js"
   },
   module: {
     rules: [
@@ -55,8 +55,8 @@ module.exports = {
       template: path.resolve(__dirname, "public/index.html")
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
+      filename: "[name].[hash].css",
+      chunkFilename: "[id].[hash].css",
       ignoreOrder: false
     })
   ],

@@ -6,9 +6,6 @@ const scss_config = {
     loader: MiniCssExtractPlugin.loader,
   }, {
     loader: 'css-loader',
-    // options: {
-    //   importLoaders: 2,
-    // },
   }, {
     loader: 'postcss-loader',
     options: {
