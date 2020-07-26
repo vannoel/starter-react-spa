@@ -43,13 +43,15 @@ npm init next-app [new project] --example "https://github.com/vannoel/starter-re
 +-- src/
 | +-- assets/
 | | +-- definitions/ (constant definitions)
+| | +-- i18n/ (dictionary for i18next)
 | | `-- style/ (style files)
 | +-- components/ (content-type components for container)
 | +-- lib/ (tool functions)
-| +-- components/ (module-type components)
+| +-- modules/ (module-type components)
 | +-- plugins/ (configurations of third-party package)
 | +-- routes/ (container-type components for routes)
 | +-- stores/ (store modules for redux)
+| `-- index.jsx
 +-- utils/ (utils for webpack)
 +-- .browserslistrc
 +-- .env.development
@@ -58,6 +60,7 @@ npm init next-app [new project] --example "https://github.com/vannoel/starter-re
 +-- .gitignore
 +-- .huskyrc.json
 +-- .lintstagedrc.json
++-- .prettierignore
 +-- .prettierrc.js
 +-- package.json
 +-- package-lock.json
