@@ -7,7 +7,6 @@ const eslintConfig = require('./configs/eslint.config.js');
 const babelConfig = require('./configs/babel.config.js');
 const scssConfig = require('./configs/scss.config.js');
 const fileConfig = require('./configs/file.config.js');
-const jsonConfig = require('./configs/json.config.js');
 
 const PACKAGE = require('./package.json');
 
@@ -22,7 +21,7 @@ module.exports = {
     filename: '[name].[hash].js',
   },
   module: {
-    rules: [eslintConfig, babelConfig, scssConfig, fileConfig, jsonConfig],
+    rules: [eslintConfig, babelConfig, scssConfig, fileConfig],
   },
   resolve: {
     alias: {
