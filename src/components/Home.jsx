@@ -5,22 +5,15 @@ import { compose } from 'recompose';
 // import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome';
 
 const enhance = compose(
-  connect(
-    (state) => {
-      return {
-        'xAccessToken'  : state.user.xAccessToken
-      };
-    }
-  ),
+  connect((state) => {
+    return {
+      xAccessToken: state.user.xAccessToken,
+    };
+  })
 );
 
-
 const Home = enhance(() => {
-  return (
-    <div>
-      {'Hello World!'}
-    </div>
-  );
+  return <div>{'Hello World!'}</div>;
 });
 
 export default Home;

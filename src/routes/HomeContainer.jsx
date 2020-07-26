@@ -3,9 +3,7 @@ import React from 'react';
 import Home from '@src/components/Home.jsx';
 
 const HomeContainer = () => {
-  return (
-    <Home/>
-  );
+  return <Home />;
 };
 
 export default HomeContainer;

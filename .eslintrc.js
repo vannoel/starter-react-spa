@@ -1,27 +1,28 @@
 module.exports = {
-  "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "node": true,
-    "commonjs": true,
-    "es6": true,
-    "amd": true,
-    "jest": true
+  parser: 'babel-eslint',
+  env: {
+    browser: true,
+    es2020: true,
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
-    }
+  extends: ['plugin:react/recommended', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      experimentalObjectRestSpread: true,
+    },
   },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "no-console":                 ["warn"],
-    "no-unused-vars":             ["warn"]
-  }
+  plugins: ['react', 'prettier'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  ignorePatterns: ['node_modules/', '.cache/', 'dist/'],
+  rules: {
+    'prettier/prettier': ['error'],
+    'no-console': ['warn'],
+    'no-unused-vars': ['warn'],
+  },
 };

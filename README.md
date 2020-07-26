@@ -126,7 +126,6 @@ Here I list those packages used in this starter. And thanks to each author for y
 >
 > react-router-dom
 
-
 > redux
 >
 > redux-persist

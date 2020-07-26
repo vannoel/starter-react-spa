@@ -7,21 +7,11 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 
 const HomeContainer = React.lazy(() => import('@src/routes/HomeContainer.jsx'));
 
-/**
- * Load plugin
- */
 import '@src/plugins/fontawesome.js';
+import { store, persistor } from '@src/plugins/redux.js';
 
-/**
- * Load assets
- */
 import '@src/assets/style/index.scss';
-
-/**
- * Load store
- */
-import {store, persistor} from '@src/store.js';
-import ROUTE from '@src/assets/definitions/routeMap.js';
+import ROUTE from '@src/assets/definitions/routeName.json';
 
 const Main = () => {
   return (
@@ -30,7 +20,7 @@ const Main = () => {
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path={ROUTE.HOME} element={<HomeContainer/>}/>
+              <Route path={ROUTE.HOME} element={<HomeContainer />} />
               {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
           </Suspense>
@@ -40,4 +30,4 @@ const Main = () => {
   );
 };
 
-render((<Main />), document.getElementById('main'));
+render(<Main />, document.getElementById('main'));
