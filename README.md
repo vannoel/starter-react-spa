@@ -42,12 +42,14 @@ npm init next-app [new project] --example "https://github.com/vannoel/starter-re
 | `-- index.html
 +-- src/
 | +-- assets/
-| | +-- definitions/
-| | | `-- routeMap.js
-| | `-- style/ (Style files)
-| +-- plugins/ (Packages' configuration)
-| +-- routes/ (React routes)
-| +-- stores/ (Rect stores)
+| | +-- definitions/ (constant definitions)
+| | `-- style/ (style files)
+| +-- components/ (content-type components for container)
+| +-- lib/ (tool functions)
+| +-- components/ (module-type components)
+| +-- plugins/ (configurations of third-party package)
+| +-- routes/ (container-type components for routes)
+| +-- stores/ (store modules for redux)
 +-- utils/ (utils for webpack)
 +-- .browserslistrc
 +-- .env.development
