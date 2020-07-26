@@ -36,7 +36,7 @@ npm init next-app [new project] --example "https://github.com/vannoel/starter-re
 
 ```
 +-- configs/
-| `-- config.js (loaders of webpack)
+| `-- config.js (loaders for webpack)
 +-- public/
 | +-- favicon.ico
 | `-- index.html
@@ -48,93 +48,20 @@ npm init next-app [new project] --example "https://github.com/vannoel/starter-re
 | +-- plugins/ (Packages' configuration)
 | +-- routes/ (React routes)
 | +-- stores/ (Rect stores)
-+-- utils/ (utils of webpack)
++-- utils/ (utils for webpack)
 +-- .browserslistrc
-+-- .env
++-- .env.development
++-- .env.production
 +-- .eslint.js
 +-- .gitignore
++-- .huskyrc.json
++-- .lintstagedrc.json
++-- .prettierrc.js
 +-- package.json
 +-- package-lock.json
++-- postcss.config.js
 +-- RREADME.md
-+-- webpack.config.js
-
++-- webpack.base.js
++-- webpack.dev.js
++-- webpack.prod.js
 ```
-
-+-- which-module@2.0.0
-|
-`-- isobject@3.0.1 deduped
-
-## Package List
-
-Here I list those packages used in this starter. And thanks to each author for your masterpieces sincerely.
-
-> rimraf
->
-> dotenv
->
-> recompose
-
-> webpack
->
-> webpack-cli
->
-> webpack-dev-server
->
-> webpack-merge
->
-> html-webpack-plugin
->
-> mini-css-extract-plugin
->
-> optimize-css-assets-webpack-plugin
->
-> terser-webpack-plugin
->
-> uglifyjs-webpack-plugin
-
-> @babel
->
-> babel-loader
->
-> babel-eslint
-
-> css-loader
-
-> postcss-loader
->
-> autoprefixer
-
-> sass-loader
->
-> sass
->
-> node-sass
-
-> eslint-loader
->
-> eslint
->
-> eslint-plugin-react
-
-> file-loader
-
-> react
->
-> react-dom
->
-> react-redux
->
-> react-router-dom
-
-> redux
->
-> redux-persist
-
-> axios
-
-> @fortawesome
-
-## Reference
-
-- [React-router-dom from v5 to v6](https://github.com/ReactTraining/react-router/blob/dev/docs/advanced-guides/migrating-5-to-6.md)
-- [React-router-dom 6.0.0](https://github.com/ReactTraining/react-router/blob/dev/docs/installation/getting-started.md)
