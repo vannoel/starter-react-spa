@@ -1,4 +1,4 @@
-const eslint_config = {
+const eslintConfig = {
   test: /\.(js|jsx)$/,
   include: /src/,
   exclude: /node_modules/,
@@ -13,4 +13,4 @@ const eslint_config = {
   ],
 };
 
-module.exports = eslint_config;
+module.exports = eslintConfig;

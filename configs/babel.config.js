@@ -1,4 +1,4 @@
-const babel_config = {
+const babelConfig = {
   test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   use: [
@@ -15,4 +15,4 @@ const babel_config = {
   ],
 };
 
-module.exports = babel_config;
+module.exports = babelConfig;

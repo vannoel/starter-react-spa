@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const scss_config = {
+const scssConfig = {
   test: /\.scss$/i,
   use: [
     {
@@ -18,4 +18,4 @@ const scss_config = {
   ],
 };
 
-module.exports = scss_config;
+module.exports = scssConfig;

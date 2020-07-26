@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const eslint_config = require('./configs/eslint.config.js');
-const babel_config = require('./configs/babel.config.js');
-const scss_config = require('./configs/scss.config.js');
-const file_config = require('./configs/file.config.js');
+const eslintConfig = require('./configs/eslint.config.js');
+const babelConfig = require('./configs/babel.config.js');
+const scssConfig = require('./configs/scss.config.js');
+const fileConfig = require('./configs/file.config.js');
 const jsonConfig = require('./configs/json.config.js');
 
 const PACKAGE = require('./package.json');
@@ -22,7 +22,7 @@ module.exports = {
     filename: '[name].[hash].js',
   },
   module: {
-    rules: [eslint_config, babel_config, scss_config, file_config, jsonConfig],
+    rules: [eslintConfig, babelConfig, scssConfig, fileConfig, jsonConfig],
   },
   resolve: {
     alias: {

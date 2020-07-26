@@ -1,4 +1,4 @@
-const file_config = {
+const fileConfig = {
   test: /\.(ttf|otf|png|jpg|svg|gif|eot|woff2)$/,
   use: [
     {
@@ -11,4 +11,4 @@ const file_config = {
   ],
 };
 
-module.exports = file_config;
+module.exports = fileConfig;
