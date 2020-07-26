@@ -10,7 +10,7 @@
     "build": "npm run build-dev",
     "build-prod": "webpack --progress --color --config webpack.prod.js",
     "build-dev": "webpack --progress --color --config webpack.dev.js",
-    "start": "webpack-dev-server --open --devtool eval --progress --color --content-base build --config webpack.dev.js",
+    "start": "npm run start-dev",
     "start-prod": "webpack-dev-server --open --devtool eval --progress --color --content-base build --config webpack.prod.js",
     "start-dev": "webpack-dev-server --open --devtool eval --progress --color --content-base build --config webpack.dev.js",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
