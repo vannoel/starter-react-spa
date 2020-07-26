@@ -5,6 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "clean-modules": "rimraf node_modules",
     "build": "npm run build-dev",
     "build-prod": "webpack --progress --color --config webpack.prod.js",
     "build-dev": "webpack --progress --color --config webpack.dev.js",
