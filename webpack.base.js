@@ -27,7 +27,7 @@ module.exports = {
     alias: {
       '@src': path.resolve(__dirname, './src'),
     },
-    modules: [path.resolve(__dirname, './node_modules'), path.resolve(__dirname, './src')],
+    modules: [path.join(__dirname, 'src'), 'node_modules'],
   },
   performance: {
     hints: false,

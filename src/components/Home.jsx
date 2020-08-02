@@ -1,8 +1,6 @@
 import React from 'react';
-// import { useNavigate, useParams, useHistory, useLocation, useSearchParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
-// import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome';
 
 const enhance = compose(
   connect((state) => {
